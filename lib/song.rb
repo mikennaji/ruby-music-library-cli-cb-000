@@ -1,4 +1,4 @@
-class Song 
+class Song
 
 attr_accesscor :name
 
@@ -20,4 +20,4 @@ end
 
 
 
-end  
+end
