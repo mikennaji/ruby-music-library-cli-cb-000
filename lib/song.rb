@@ -4,7 +4,7 @@ attr_accessor :name, :artist
 
 @@all = []
 
-def initialize(name,artist_object*)
+def initialize(name,artist_object=nil)
   @name = name
   self.artist = artist_object
   save
