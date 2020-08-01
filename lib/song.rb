@@ -22,6 +22,11 @@ def self.destroy_all
   @@all =[]
 end
 
+def self.create(name)
+  song = Song.new(name)
+  return song
+end
+
 
 
 
