@@ -28,7 +28,7 @@ def self.create(name)
 end
 
 def songs
-  Songs.all.select{|song|song.artist==self}
+  return Songs.all.select{|song|song.artist==self}
 end
 
 
