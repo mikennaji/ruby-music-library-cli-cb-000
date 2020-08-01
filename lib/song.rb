@@ -10,12 +10,12 @@ def initialize(name)
 
 end
 
-def save 
+def save
     @@all << self
-end 
+end
 
-def self.all 
-  @all 
+def self.all
+  @all
 end
 
 def self.destroy_all
