@@ -28,15 +28,3 @@ def self.create(name)
 end
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
