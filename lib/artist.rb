@@ -22,7 +22,7 @@ def self.destroy_all
 end
 
 def self.create(name)
-  song = Song.new(name)
+  song = Artist.new(name)
   song
 end
 
