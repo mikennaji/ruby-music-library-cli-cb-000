@@ -24,7 +24,7 @@ end
 
 def self.create(name)
   song = Song.new(name)
-  return song
+  song
 end
 
 
