@@ -43,7 +43,15 @@ end
 
 
 def list_artists
-  puts  MusicImporter.new(@path).files
+  store =  MusicImporter.new(@path).files
+   store1 = []
+   store.each do |file|
+     store1<< filename.split(' - ')[0]
+   end
+   store1.sort!
+   store1.each_with_index do |index, value|
+     puts "#{index+1}. #{value}"
+   end
 
 
 
