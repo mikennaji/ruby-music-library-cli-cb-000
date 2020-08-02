@@ -48,7 +48,7 @@ def list_artists
    store.each do |file|
      store1<< file.split(' - ')[0]
    end
-   store1.sort_by{|a| a[0..1]}
+   store1.sort_by{|a| a[0]}
    store1.each_with_index do |value, index|
      puts "#{index+1}. #{value}"
    end
