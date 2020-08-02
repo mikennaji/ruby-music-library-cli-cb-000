@@ -47,7 +47,10 @@ def self.find_or_create_by_name(name)
 end
 
 def self.new_from_filename(filename)
-  name= filename.split(' - ')[1]
+  song = self.create(filename.split(' - ')[1])
+  artist = Artist.new(filename.split(' - ')[0])
+  song.artist =artist
+  return song
   self.create(name)
 
 end
