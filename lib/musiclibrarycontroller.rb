@@ -47,7 +47,7 @@ def list_artists
      puts "#{index+1}. #{value.artist.name} - #{value.name} - #{value.genre.name}"
    end
  end
- 
+
 
 
 
