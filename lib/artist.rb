@@ -47,3 +47,5 @@ def artist=
 
 
 end
+
+end
