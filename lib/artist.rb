@@ -35,6 +35,7 @@ end
 def add_song(song)
   if song.artist.nil?
    song.artist =self
+   self.songs<< self
  else
    nil
  end
