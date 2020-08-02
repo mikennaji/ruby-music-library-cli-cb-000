@@ -31,7 +31,7 @@ def self.create(name)
 end
 
 def songs
-  
+
   Song.all.select{|x| x.artist ==self}
 end
 
