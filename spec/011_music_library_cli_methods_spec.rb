@@ -29,8 +29,8 @@ describe "MusicLibraryController - CLI Methods" do
     it "prints all artists in the music library in a numbered list (alphabetized by artist name)" do
       expect($stdout).to receive(:puts).with("1. Action Bronson")
       expect($stdout).to receive(:puts).with("2. Jurassic 5")
-      expect($stdout).to receive(:puts).with("3. Thundercat. Real Estate")
-      expect($stdout).to receive(:puts).with("4. Real Estate")
+      expect($stdout).to receive(:puts).with("3. Real Estate")
+      expect($stdout).to receive(:puts).with("4. Thundercat")
 
       music_library_controller.list_artists
     end
@@ -39,8 +39,8 @@ describe "MusicLibraryController - CLI Methods" do
       Artist.create("ZZ Top")
 
       expect($stdout).to receive(:puts).with("1. Alpha 9")
-      expect($stdout).to receive(:puts).with("2. Cass McCombs")
-      expect($stdout).to receive(:puts).with("3. Bob Dylan")
+      expect($stdout).to receive(:puts).with("2. Bob Dylan")
+      expect($stdout).to receive(:puts).with("3. Cass McCombs")
       expect($stdout).to receive(:puts).with("4. ZZ Top")
 
       other_music_library_controller.list_artists
@@ -90,7 +90,7 @@ describe "MusicLibraryController - CLI Methods" do
 
       expect($stdout).to receive(:puts).with("Please enter the name of an artist:")
       expect($stdout).to receive(:puts).with("1. Green Aisles - country")
-      expect($stdout).to receive(:puts).with("2. It's Real - hip-hop")
+      expect($stdout).to receive(:puts).with("2. It's Real - hip-ho")
       expect($stdout).to receive(:puts).with("3. Wonder Years - dream pop")
 
       music_library_controller.list_songs_by_artist
