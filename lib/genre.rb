@@ -5,6 +5,7 @@ attr_accessor :name
 def initialize(name)
   @name = name
   save
+  @songs = []
 
 end
 
@@ -24,6 +25,11 @@ def self.create(name)
   song = Genre.new(name)
   song
 end
+
+def songs 
+  Song.all.select{|song| song.genre===self}
+end
+
 
 
 end
