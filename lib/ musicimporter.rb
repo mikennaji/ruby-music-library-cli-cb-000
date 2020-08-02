@@ -11,7 +11,7 @@ def files
   directory = Dir["#{self.path}/*"]
   directory.map do |file|
     file.splice!(self.path + "/")
-  end 
+  end
 
   
 
