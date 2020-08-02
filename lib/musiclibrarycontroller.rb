@@ -62,11 +62,11 @@ def list_artists
     puts "Please enter the name of an artist:"
     response = gets.strip
     Song.all.select{|song|song.artist.name === response}.sort{|a,b|a.name<=> b.name}.each_with_index do |value, index|
-      puts "#{index+1}. #{value.name} - #{value.genre.name}" 
+      puts "#{index+1}. #{value.name} - #{value.genre.name}"
     end
   end
-    
-    
+
+
 
 
 
