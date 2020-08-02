@@ -5,7 +5,6 @@ attr_accessor :name, :genres
 extend Concerns::Findable
 
 
-
 def initialize(name)
   @name = name
   save
@@ -31,8 +30,8 @@ def self.create(name)
 end
 
 def songs
-
-  Song.all.select{|x| x.artist ==self}
+  @songs= Song.all.select{|song|song.artist==self}
+  @songs
 end
 
 def add_song(song)
