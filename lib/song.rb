@@ -51,7 +51,7 @@ def self.new_from_filename(filename)
   artist = Artist.create(filename.split(' - ')[0])
   genre = Genre.create(filename.split(' - ')[2].splice!('.mp3'))
   song.artist =artist
-  song.genre= genre 
+  song.genre= genre
   return song
 
 end
