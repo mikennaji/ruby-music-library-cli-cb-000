@@ -66,6 +66,14 @@ def list_artists
     end
   end
 
+  def list_songs_by_genre
+    puts "Please enter the name of a genre:"
+    response = gets.strip
+    Song.all.select{|song|song.genre.name === response}.sort{|a,b|a.name<=> b.name}.each_with_index do |value, index|
+      puts "#{index+1}. #{value.artist.name} - #{value.name}"
+    end
+  end
+
 
 
 
