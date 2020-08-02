@@ -49,7 +49,7 @@ def list_artists
      store1<< file.split(' - ')[0]
    end
    store1.sort!
-   store1.each_with_index do |index, value|
+   store1.each_with_index do |value, index|
      puts "#{index+1}. #{value}"
    end
 
