@@ -5,10 +5,12 @@ attr_accessor :new_music, :path
 
 
 def initialize(file_path="./db/mp3s")
-  @path= file_path
-  @new_music = MusicImporter.new(@path)
-  @new_music.import
+   MusicImporter.new(file_path).import+
 end
+
+def initialize(path = "./db/mp3s")
+      MusicImporter.new(path).import
+    end
 
 def call
   puts "Welcome to your music library!"
