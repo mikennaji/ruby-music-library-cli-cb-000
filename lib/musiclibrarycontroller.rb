@@ -6,7 +6,9 @@ attr_accessor :library
 
 
 def initialize(path='./db/mp3s')
-    @library =   MusicImporter.new(path).import
+    @doc =   MusicImporter.new(path)
+    @doc.import
+    @library = @doc.files
  end
 
 def call
