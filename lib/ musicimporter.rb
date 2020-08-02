@@ -12,7 +12,7 @@ def files
   directory.map do |file|
     file.slice!(self.path + "/")
   end
-  puts directory
+  return directory
 
 
 
