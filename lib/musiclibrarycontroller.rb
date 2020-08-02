@@ -23,14 +23,6 @@ def call
   puts "To quit, type 'exit'."
   puts "What would you like to do?"
 
-  case response
-   when 'list songs'
-     self.files.each do |files|
-       puts files
-    end
-  else
-    nil
-  end
 
 
 
