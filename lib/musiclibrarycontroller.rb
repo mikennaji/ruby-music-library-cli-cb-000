@@ -21,6 +21,12 @@ def call
   response = gets.strip
   case response
    when 'list songs'
+     self.files.each do |files|
+       puts files
+    end
+  else 
+    nil
+  end
 
 
 
