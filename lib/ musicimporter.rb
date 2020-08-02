@@ -7,6 +7,8 @@ def initialize(path)
  @path = path
 end
 
+def files 
+  directory = Dir["#{self.path}/*"]
 
 
 
@@ -14,5 +16,8 @@ end
 
 
 
+
+
+end
 
 end
