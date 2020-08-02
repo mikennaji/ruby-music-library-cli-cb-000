@@ -2,6 +2,9 @@ class Song
 
 attr_accessor :name, :artist, :genre
 
+extend Concerns::Findable
+
+
 @@all = []
 
 def initialize(name,artist_object=nil,genre_object=nil)
