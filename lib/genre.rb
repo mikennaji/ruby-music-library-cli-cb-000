@@ -1,6 +1,6 @@
 class Genre
 
-attr_accessor :name
+attr_accessor :name 
 
 def initialize(name)
   @name = name
@@ -27,7 +27,7 @@ def self.create(name)
 end
 
 def songs
- @songs= Song.all.select{|song| song.genre==self}
+ @songs= Song.all.select{|song| song.genre==self.uniq}
  @songs
 end
 
