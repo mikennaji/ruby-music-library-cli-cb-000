@@ -13,7 +13,7 @@ def files
     file.slice!(self.path + "/")
   end
 
-  
+
 
 end
 
