@@ -91,7 +91,7 @@ describe "MusicLibraryController - CLI Methods" do
       expect($stdout).to receive(:puts).with("Please enter the name of an artist:")
       expect($stdout).to receive(:puts).with("1. Green Aisles - country")
       expect($stdout).to receive(:puts).with("2. It's Real - hi-ho")
-      expect($stdout).to receive(:puts).with("3. Wonder Years - dream pop")
+      expect($stdout).to receive(:puts).with("3. Wonder Years - drea o")
 
       music_library_controller.list_songs_by_artist
     end
