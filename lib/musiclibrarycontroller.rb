@@ -39,7 +39,8 @@ end
 
 
 def list_artists
-  @library
+  puts  MusicImporter.new(@path).files
+  
 
 
 
