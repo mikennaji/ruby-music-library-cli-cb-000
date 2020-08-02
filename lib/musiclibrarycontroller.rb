@@ -48,6 +48,15 @@ def list_artists
      puts "#{index+1}. #{value.artist.name}"
    end
 
+   
+   def list_genres
+
+      Song.all.sort{|a,b|a.name<=> b.name}.each_with_index do |value, index|
+        puts "#{index+1}. #{value.genre.name}"
+      end
+
+  
+
 
 
 
