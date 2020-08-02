@@ -24,7 +24,7 @@ def call
      self.files.each do |files|
        puts files
     end
-  else 
+  else
     nil
   end
 
