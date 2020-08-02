@@ -66,13 +66,3 @@ def list_artists
 
 
 end
-
-
-
-
-
-
-
-
-
-
