@@ -32,9 +32,8 @@ def songs
 end
 
 def add_song(song)
-  if song.artist.nil?
    song.artist =self
- end
+
 end
 
 
