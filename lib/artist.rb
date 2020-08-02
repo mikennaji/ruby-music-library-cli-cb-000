@@ -30,7 +30,6 @@ def self.create(name)
 end
 
 def songs
-  @songs= Song.all.select{|song|song.artist==self}
   @songs
 end
 
