@@ -35,7 +35,7 @@ def songs
 end
 
 def add_song(song)
-  song.artist = self 
+  song.artist = self
 end
 
 def artist=
@@ -44,4 +44,3 @@ def artist=
 end
 
 end
-
