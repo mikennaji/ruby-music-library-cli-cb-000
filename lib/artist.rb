@@ -2,6 +2,9 @@ class Artist
 
 attr_accessor :name, :genres
 
+extend Concerns::Findable
+
+
 
 def initialize(name)
   @name = name
