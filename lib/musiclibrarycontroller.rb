@@ -41,6 +41,15 @@ def call
 end
 
 
+def list_artists
+
+   Song.all.each_with_index do |value, index|
+     puts "#{index+1}. #{value.artist.name} - #{value.name} - #{value.genre.name}"
+   end
+ end
+ 
+
+
 
 def list_artists
 
