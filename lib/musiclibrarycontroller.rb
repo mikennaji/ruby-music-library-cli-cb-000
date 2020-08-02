@@ -38,6 +38,7 @@ end
 
 
 def list_artists
+  puts self.new_music
 
 
 
