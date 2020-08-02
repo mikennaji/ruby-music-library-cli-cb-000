@@ -1,12 +1,12 @@
 class MusicLibraryController
 
-attr_accessor :new_music, :path
+attr_accessor :library
 
 
 
 
 def initialize(path='./db/mp3s')
-      MusicImporter.new(path).import
+    @library =   MusicImporter.new(path).import
  end
 
 def call
@@ -37,7 +37,7 @@ end
 
 
 def list_artists
-  @new_music
+  @library
 
 
 
