@@ -40,7 +40,7 @@ end
 
 def list_artists
   puts  MusicImporter.new(@path).files
-  
+
 
 
 
