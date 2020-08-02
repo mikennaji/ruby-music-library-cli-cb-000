@@ -1,6 +1,6 @@
 class MusicLibraryController
 
-attr_accessor :new_music, :path 
+attr_accessor :new_music, :path
 
 
 
@@ -40,7 +40,7 @@ end
 def list_artists
   puts @new_music
   
-  
+
 
 
 
