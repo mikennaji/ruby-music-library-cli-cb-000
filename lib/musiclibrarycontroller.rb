@@ -11,6 +11,8 @@ def initialize(path='./db/mp3s')
  end
 
 def call
+  response = gets.strip
+  
   puts "Welcome to your music library!"
   puts "To list all of your songs, enter 'list songs'."
   puts "To list all of the artists in your library, enter 'list artists'."
@@ -20,7 +22,7 @@ def call
   puts "To play a song, enter 'play song'."
   puts "To quit, type 'exit'."
   puts "What would you like to do?"
-  response = gets.strip
+  
   case response
    when 'list songs'
      self.files.each do |files|
