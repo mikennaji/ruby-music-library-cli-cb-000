@@ -26,7 +26,7 @@ def self.create(name)
   song
 end
 
-def songs
+def genres
  @songs= Song.all.select{|song| song.genre==self}
  @songs
 end
