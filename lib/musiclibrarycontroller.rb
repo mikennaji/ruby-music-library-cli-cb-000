@@ -1,4 +1,4 @@
-class MusicLibraryController 
+class MusicLibraryController
 attr_accessor :path
 
 
@@ -22,7 +22,7 @@ def call
   puts "To play a song, enter 'play song'."
   puts "To quit, type 'exit'."
   puts "What would you like to do?"
-  
+
   case response
    when 'list songs'
      self.files.each do |files|
