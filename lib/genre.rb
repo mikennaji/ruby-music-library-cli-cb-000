@@ -28,7 +28,7 @@ end
 
 def songs
  @songs= Song.all.select{|song| song.genre==self}
-  puts @songs
+ @songs
 end
 
 
