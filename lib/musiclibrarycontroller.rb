@@ -5,7 +5,7 @@ attr_accessor :new_music, :path
 
 
 def initialize(file_path="./db/mp3s")
-   MusicImporter.new(file_path).import+
+   MusicImporter.new(file_path).import
 end
 
 def initialize(path = "./db/mp3s")
