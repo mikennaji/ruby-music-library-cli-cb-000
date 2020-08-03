@@ -51,7 +51,7 @@ end
 def genres
   store = []
   self.songs.map do |song|
-    store<< song.genre.uniq.name
+    store<< song.genre.name
  end
  return store
 end
