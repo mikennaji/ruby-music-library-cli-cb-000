@@ -48,4 +48,13 @@ def artist=
 
 end
 
+def genres
+  store = []
+  self.songs.map do |song|
+    store<< song.genre.uniq.name
+ end 
+ return store 
 end
+
+end 
+
