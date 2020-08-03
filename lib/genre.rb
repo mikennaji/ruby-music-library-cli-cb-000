@@ -28,12 +28,12 @@ def self.create(name)
 end
 
 def songs
- @songs
+ Song.all.select{|song| song.genre==self}
 end
 
 def artists
   store = []
-  Song.all.select{|song| song.genre==self}.map do |song|
+  self.songs.map do |song|
     if store.include?(song.artist)== false
      store<< song.artist
    end
