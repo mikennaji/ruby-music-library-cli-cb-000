@@ -53,6 +53,7 @@ def genres
   self.songs.map do |song|
     if store.include?(song.genre)== false
      store<< song.genre
+   end
     end
  return store
 end
