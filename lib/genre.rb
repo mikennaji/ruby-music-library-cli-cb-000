@@ -29,7 +29,6 @@ end
 
 def songs
  Song.all.select{|song| song.genre==self}
- @songs
 end
 
 def artists
