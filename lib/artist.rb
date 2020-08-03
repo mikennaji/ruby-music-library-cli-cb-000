@@ -30,8 +30,8 @@ def self.create(name)
 end
 
 def songs
-  @songs= Song.all.select{|song|song.artist==self}
-  @songs
+ Song.all.select{|song|song.artist==self}
+  
 end
 
 def add_song(song)
@@ -57,5 +57,7 @@ def genres
     end
  return store
 end
+
+
 
 end
