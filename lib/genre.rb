@@ -32,6 +32,15 @@ def songs
  @songs
 end
 
+def artists
+  store = []
+  self.songs.map do |song|
+    if store.include?(song.artist)== false
+     store<< song.artist
+   end
+    end
+ return store
+end
 
 
 end
